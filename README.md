@@ -1,14 +1,20 @@
-# Deeptree Espanso
+# Deeptree Espanso (Windows)
 
-Espanso matches that could be shared for Global use at Deeptree
+Espanso matches tailored for Windows systems at Deeptree.
 
 ## Installation
 
-### Windows
-
-### Linux
+1. Download and install Espanso for Windows from the [official website](https://espanso.org/install/windows/).
+2. Copy the contents of this repository into `%APPDATA%\espanso`.
+3. Restart Espanso.
 
 ## Importing Espanso Configurations
+
+Use the `espanso` command in PowerShell to reload the configuration:
+
+```powershell
+espanso restart
+```
 
 ## Espanso Helper
 

@@ -9,7 +9,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d 'tomorrow' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(1).ToString('yyyy-MM-dd')\""
 
   # Print 2 days from now date in ISO 8861 format
   - trigger: ";2tmr"
@@ -18,7 +18,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '2 days' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(2).ToString('yyyy-MM-dd')\""
 
   # Print 3 days from now date in ISO 8861 format
   - trigger: ";3tmr"
@@ -27,7 +27,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '3 days' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(3).ToString('yyyy-MM-dd')\""
 
   # Print 4 days from now date in ISO 8861 format
   - trigger: ";4tmr"
@@ -36,7 +36,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '4 days' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(4).ToString('yyyy-MM-dd')\""
 
   # Print 5 days from now date in ISO 8861 format
   - trigger: ";5tmr"
@@ -45,7 +45,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '5 days' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(5).ToString('yyyy-MM-dd')\""
 
   # Print 6 days from now date in ISO 8861 format
   - trigger: ";6tmr"
@@ -54,7 +54,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '6 days' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(6).ToString('yyyy-MM-dd')\""
 
   # Print yesterday's date in ISO 8861 format
   - trigger: ";yst"
@@ -63,7 +63,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d 'yesterday' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(-1).ToString('yyyy-MM-dd')\""
 
   # Print 2 days ago date in ISO 8861 format
   - trigger: ";2yst"
@@ -72,7 +72,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '2 days ago' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(-2).ToString('yyyy-MM-dd')\""
 
   # Print 3 days ago date in ISO 8861 format
   - trigger: ";3yst"
@@ -81,7 +81,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '3 days ago' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(-3).ToString('yyyy-MM-dd')\""
 
   # Print 4 days ago date in ISO 8861 format
   - trigger: ";4yst"
@@ -90,7 +90,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '4 days ago' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(-4).ToString('yyyy-MM-dd')\""
 
   # Print 5 days ago date in ISO 8861 format
   - trigger: ";5yst"
@@ -99,7 +99,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '5 days ago' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(-5).ToString('yyyy-MM-dd')\""
 
   # Print 6 days ago date in ISO 8861 format
   - trigger: ";6yst"
@@ -108,4 +108,4 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '6 days ago' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(-6).ToString('yyyy-MM-dd')\""

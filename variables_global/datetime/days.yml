@@ -10,7 +10,7 @@ matches:
         type: shell
         params:
           cmd: |
-            date -d "next Monday" '+Monday %Y-%m-%d'
+            powershell -NoProfile -Command "$d=Get-Date; $delta=([int][DayOfWeek]::Monday - [int]$d.DayOfWeek + 7) % 7; if($delta -eq 0){$delta=7}; $d.AddDays($delta).ToString('dddd yyyy-MM-dd')"
 
   - trigger: ";tues"
     name: "Next Tuesday with date"
@@ -20,7 +20,7 @@ matches:
         type: shell
         params:
           cmd: |
-            date -d "next Tuesday" '+Tuesday %Y-%m-%d'
+            powershell -NoProfile -Command "$d=Get-Date; $delta=([int][DayOfWeek]::Tuesday - [int]$d.DayOfWeek + 7) % 7; if($delta -eq 0){$delta=7}; $d.AddDays($delta).ToString('dddd yyyy-MM-dd')"
 
   - trigger: ";wed"
     name: "Next Wednesday with date"
@@ -30,7 +30,7 @@ matches:
         type: shell
         params:
           cmd: |
-            date -d "next Wednesday" '+Wednesday %Y-%m-%d'
+            powershell -NoProfile -Command "$d=Get-Date; $delta=([int][DayOfWeek]::Wednesday - [int]$d.DayOfWeek + 7) % 7; if($delta -eq 0){$delta=7}; $d.AddDays($delta).ToString('dddd yyyy-MM-dd')"
 
   - trigger: ";thur"
     name: "Next Thursday with date"
@@ -40,7 +40,7 @@ matches:
         type: shell
         params:
           cmd: |
-            date -d "next Thursday" '+Thursday %Y-%m-%d'
+            powershell -NoProfile -Command "$d=Get-Date; $delta=([int][DayOfWeek]::Thursday - [int]$d.DayOfWeek + 7) % 7; if($delta -eq 0){$delta=7}; $d.AddDays($delta).ToString('dddd yyyy-MM-dd')"
 
   - trigger: ";fri"
     name: "Next Friday with date"
@@ -50,7 +50,7 @@ matches:
         type: shell
         params:
           cmd: |
-            date -d "next Friday" '+Friday %Y-%m-%d'
+            powershell -NoProfile -Command "$d=Get-Date; $delta=([int][DayOfWeek]::Friday - [int]$d.DayOfWeek + 7) % 7; if($delta -eq 0){$delta=7}; $d.AddDays($delta).ToString('dddd yyyy-MM-dd')"
 
   - trigger: ";sat"
     name: "Next Saturday with date"
@@ -60,7 +60,7 @@ matches:
         type: shell
         params:
           cmd: |
-            date -d "next Saturday" '+Saturday %Y-%m-%d'
+            powershell -NoProfile -Command "$d=Get-Date; $delta=([int][DayOfWeek]::Saturday - [int]$d.DayOfWeek + 7) % 7; if($delta -eq 0){$delta=7}; $d.AddDays($delta).ToString('dddd yyyy-MM-dd')"
 
   - trigger: ";sun"
     name: "Next Sunday with date"
@@ -70,7 +70,7 @@ matches:
         type: shell
         params:
           cmd: |
-            date -d "next Sunday" '+Sunday %Y-%m-%d'
+            powershell -NoProfile -Command "$d=Get-Date; $delta=(7 - [int]$d.DayOfWeek) % 7; if($delta -eq 0){$delta=7}; $d.AddDays($delta).ToString('dddd yyyy-MM-dd')"
 
   - trigger: ";lstmon"
     name: "Previous Monday with date"

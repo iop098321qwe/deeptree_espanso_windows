@@ -10,7 +10,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d 'next week' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(7).ToString('yyyy-MM-dd')\""
 
   # Get the same weekday from 2 weeks ahead in ISO 8601 format
   - trigger: ";2nxtweek"
@@ -19,7 +19,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '2 weeks' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(14).ToString('yyyy-MM-dd')\""
 
   # Get the same weekday from 3 weeks ahead in ISO 8601 format
   - trigger: ";3nxtweek"
@@ -28,7 +28,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '3 weeks' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(21).ToString('yyyy-MM-dd')\""
 
   # Get the same weekday from 4 weeks ahead in ISO 8601 format
   - trigger: ";4nxtweek"
@@ -37,7 +37,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '4 weeks' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(28).ToString('yyyy-MM-dd')\""
 
   # Get the same weekday from 5 weeks ahead in ISO 8601 format
   - trigger: ";5nxtweek"
@@ -46,7 +46,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '5 weeks' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(35).ToString('yyyy-MM-dd')\""
 
   # Get the same weekday from 6 weeks ahead in ISO 8601 format
   - trigger: ";6nxtweek"
@@ -55,7 +55,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '6 weeks' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(42).ToString('yyyy-MM-dd')\""
 
   # Get the same weekday from 7 weeks ahead in ISO 8601 format
   - trigger: ";7nxtweek"
@@ -64,7 +64,7 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '7 weeks' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(49).ToString('yyyy-MM-dd')\""
 
   # Get the same weekday from 8 weeks ahead in ISO 8601 format
   - trigger: ";8nxtweek"
@@ -73,4 +73,4 @@ matches:
       - name: mydate
         type: shell
         params:
-          cmd: "date -d '8 weeks' +'%Y-%m-%d'"
+          cmd: "powershell -NoProfile -Command \"(Get-Date).AddDays(56).ToString('yyyy-MM-dd')\""
