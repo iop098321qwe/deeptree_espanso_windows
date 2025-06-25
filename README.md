@@ -6,10 +6,13 @@ The instructions below walk through installation on a Windows PC with no command
 
 ## Quick Start
 
-1. **Download the files**
-   - On GitHub click the green **Code** button and choose **Download ZIP**.
-   - Right‑click the downloaded archive and select **Extract All…** to unpack it.
-2. **Run the setup script**
+1. **Download the latest release**
+   - Visit the [release page](https://github.com/iop098321qwe/deeptree_espanso_windows/releases/latest).
+   - Under **Assets** click the `.zip` file, for example `deeptree_espanso_windows-v1.1.0.zip`, and wait for the download to finish.
+2. **Extract the archive**
+   - Open your Downloads folder, right‑click the downloaded file and choose **Extract All…**.
+   - Pick a convenient location (such as the Desktop) and click **Extract**. The new folder will contain all configuration files.
+3. **Run the setup script**
    - Inside the extracted folder find `Setup_Espanso_and_Configs.bat`.
    - Right‑click this file and choose **Run as administrator**. Windows may ask for permission.
    - The script will:
@@ -18,7 +21,7 @@ The instructions below walk through installation on a Windows PC with no command
      3. Copy all configuration files into `%APPDATA%\espanso`.
      4. Restart Espanso so it loads the new snippets.
    - When you see **Setup complete**, press any key to close the window.
-3. **Confirm Espanso is running**
+4. **Confirm Espanso is running**
    - Look for the Espanso icon in the system tray (near the clock). If it isn’t there search for **Espanso** in the Start menu and open it.
 
 ## Personalizing Your Information
