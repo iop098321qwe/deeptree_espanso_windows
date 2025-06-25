@@ -226,8 +226,10 @@ matches:
 
       **NO RESPONSE REQUIRED**
 
-      I am emailing to inform you that the work for your ticket has been completed at this time. Your ticket will be closed. $|$
+      I am emailing to inform you that the work for your ticket has been completed at this time and your ticket will be closed.
 
+      Though no additional actions are required, it is advised to ensure that there are no errors and that the work meets your expectations.
+      $|$
       This is a notification of completion email. To reopen your ticket if anything does not meet satisfactory completion standards, please respond to this email directly, or call {{dthelp}} with any additional information, questions, or concerns that you may have.
 
       {{signoff}}
