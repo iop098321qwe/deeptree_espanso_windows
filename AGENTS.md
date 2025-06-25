@@ -33,6 +33,7 @@ changes may be squashed into a single commit when appropriate.
 ## Pull Requests
 
 When opening a pull request, include a summary of what was changed and why.
+Use the same Conventional Commits prefix for the pull request title to summarize the overall change.
 Mention any manual steps required for users. If you ran commands to verify the
 repository (such as a linting tool), summarize the results in the PR body.
 
