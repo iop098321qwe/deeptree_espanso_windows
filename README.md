@@ -47,6 +47,36 @@ After setup you can type any trigger to insert its text. For instance typing `;g
 
 All snippet definitions live in the `expansions_deeptree` and `expansions_personalized` folders. Open any `.yml` file in Notepad to adjust an existing snippet or to copy one as a template for a new trigger. When you finish editing, restart Espanso so it reads the updated files.
 
+## Updating to the Latest Release
+
+Espanso does not automatically pull in new versions of these configuration files.
+Whenever a release is published on GitHub you can manually copy the updated
+folders while keeping your personalized data safe.
+
+1. **Close Espanso** – Right‑click the Espanso icon in the system tray and choose
+   **Quit** so none of the files are locked.
+2. **Download the new ZIP archive** – Visit the
+   [release page](https://github.com/iop098321qwe/deeptree_espanso_windows/releases/latest)
+   and under **Assets** click the file ending in `.zip` (for example
+   `deeptree_espanso_windows-v1.1.0.zip`).
+3. **Extract the ZIP file** – After the download finishes, locate the file in
+   your Downloads folder, right‑click it and select **Extract All…**. Choose a
+   convenient destination and click **Extract**.
+4. **Open the extracted folder** – Inside the new `deeptree_espanso_windows`
+   directory you will see folders such as `expansions_deeptree` and `global`.
+5. **Open your Espanso directory** – In another File Explorer window type
+   `%APPDATA%\espanso` in the address bar and press **Enter**.
+6. **Copy over the updated folders** – Drag the `expansions_deeptree` and
+   `global` folders from the extracted release into the `%APPDATA%\espanso`
+   window. When Windows asks if you want to replace the existing files, choose
+   **Replace the files in the destination**.
+7. **Keep your personal data** – Do *not* copy the `expansions_personalized`
+   folder or `variables_global\personalized_variables.yml`. Leaving these files
+   untouched preserves your own snippets and personal information.
+8. **Restart Espanso** – Launch Espanso from the Start menu or run
+   `espanso restart` in PowerShell. The program will load the updated
+   configuration and you can resume using your shortcuts.
+
 ## Troubleshooting
 
 - If the setup script says administrator rights are required, right‑click `Setup_Espanso_and_Configs.bat` again and select **Run as administrator**.
