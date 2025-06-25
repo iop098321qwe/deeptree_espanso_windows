@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.1](https://github.com/iop098321qwe/deeptree_espanso_windows/compare/v1.1.0...v1.1.1) (2025-06-25)
+
+
+### Bug Fixes
+
+* **config files:** fix accidental organization into wrong config category ([dea7639](https://github.com/iop098321qwe/deeptree_espanso_windows/commit/dea763972451159a26997abc94b3decfb8d6b821))
+
 ## [1.1.0](https://github.com/iop098321qwe/deeptree_espanso_windows/compare/v1.0.0...v1.1.0) (2025-06-25)
 
 
